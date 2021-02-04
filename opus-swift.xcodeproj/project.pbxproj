@@ -1,0 +1,724 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1718AF3025CAD81700172099 /* opus_swift.h in Headers */ = {isa = PBXBuildFile; fileRef = 1718AF2D25CAD81700172099 /* opus_swift.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1718AF3125CAD81700172099 /* opus_swift.h in Headers */ = {isa = PBXBuildFile; fileRef = 1718AF2D25CAD81700172099 /* opus_swift.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1718AF3225CAD81700172099 /* opus_swift.h in Headers */ = {isa = PBXBuildFile; fileRef = 1718AF2D25CAD81700172099 /* opus_swift.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1718AF5425CADB0D00172099 /* libopus_ios.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1718AF5125CADB0D00172099 /* libopus_ios.a */; };
+		1718AF5825CADB0D00172099 /* libopus_osx.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1718AF5225CADB0D00172099 /* libopus_osx.a */; };
+		1718AF5C25CADB0D00172099 /* libopus_catalyst.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1718AF5325CADB0D00172099 /* libopus_catalyst.a */; };
+		1725463825BE0DC8004EC45A /* opus_defines.h in Headers */ = {isa = PBXBuildFile; fileRef = 178069E325B5D97700795933 /* opus_defines.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1725463925BE0DC8004EC45A /* opus_types.h in Headers */ = {isa = PBXBuildFile; fileRef = 178069E025B5D97700795933 /* opus_types.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1725463A25BE0DC8004EC45A /* opus_multistream.h in Headers */ = {isa = PBXBuildFile; fileRef = 178069E125B5D97700795933 /* opus_multistream.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1725463B25BE0DC8004EC45A /* opus.h in Headers */ = {isa = PBXBuildFile; fileRef = 178069F725B5DD1100795933 /* opus.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1725463C25BE0DC8004EC45A /* opus_projection.h in Headers */ = {isa = PBXBuildFile; fileRef = 178069E225B5D97700795933 /* opus_projection.h */; };
+		1762BBB725B81D180045655C /* opus_defines.h in Headers */ = {isa = PBXBuildFile; fileRef = 178069E325B5D97700795933 /* opus_defines.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1762BBB825B81D180045655C /* opus_types.h in Headers */ = {isa = PBXBuildFile; fileRef = 178069E025B5D97700795933 /* opus_types.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1762BBB925B81D180045655C /* opus_multistream.h in Headers */ = {isa = PBXBuildFile; fileRef = 178069E125B5D97700795933 /* opus_multistream.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1762BBBA25B81D180045655C /* opus.h in Headers */ = {isa = PBXBuildFile; fileRef = 178069F725B5DD1100795933 /* opus.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1762BBBB25B81D180045655C /* opus_projection.h in Headers */ = {isa = PBXBuildFile; fileRef = 178069E225B5D97700795933 /* opus_projection.h */; };
+		178069E425B5D97700795933 /* opus_types.h in Headers */ = {isa = PBXBuildFile; fileRef = 178069E025B5D97700795933 /* opus_types.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		178069E525B5D97700795933 /* opus_multistream.h in Headers */ = {isa = PBXBuildFile; fileRef = 178069E125B5D97700795933 /* opus_multistream.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		178069E625B5D97700795933 /* opus_projection.h in Headers */ = {isa = PBXBuildFile; fileRef = 178069E225B5D97700795933 /* opus_projection.h */; };
+		178069E725B5D97700795933 /* opus_defines.h in Headers */ = {isa = PBXBuildFile; fileRef = 178069E325B5D97700795933 /* opus_defines.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		178069F825B5DD1100795933 /* opus.h in Headers */ = {isa = PBXBuildFile; fileRef = 178069F725B5DD1100795933 /* opus.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		17E5BE3F25C93DBF0061F232 /* Config.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 17E5BE3E25C93DBF0061F232 /* Config.xcconfig */; };
+		17E5BE4025C93DBF0061F232 /* Config.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 17E5BE3E25C93DBF0061F232 /* Config.xcconfig */; };
+		17E5BE4125C93DBF0061F232 /* Config.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 17E5BE3E25C93DBF0061F232 /* Config.xcconfig */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1718AF2D25CAD81700172099 /* opus_swift.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = opus_swift.h; sourceTree = "<group>"; };
+		1718AF2E25CAD81700172099 /* module.modulemap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; path = module.modulemap; sourceTree = "<group>"; };
+		1718AF2F25CAD81700172099 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1718AF5125CADB0D00172099 /* libopus_ios.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libopus_ios.a; sourceTree = "<group>"; };
+		1718AF5225CADB0D00172099 /* libopus_osx.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libopus_osx.a; sourceTree = "<group>"; };
+		1718AF5325CADB0D00172099 /* libopus_catalyst.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libopus_catalyst.a; sourceTree = "<group>"; };
+		1725464125BE0DC8004EC45A /* YbridOpus.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = YbridOpus.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1762BBC025B81D180045655C /* YbridOpus.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = YbridOpus.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		178069E025B5D97700795933 /* opus_types.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = opus_types.h; path = opus/include/opus_types.h; sourceTree = SOURCE_ROOT; };
+		178069E125B5D97700795933 /* opus_multistream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = opus_multistream.h; path = opus/include/opus_multistream.h; sourceTree = SOURCE_ROOT; };
+		178069E225B5D97700795933 /* opus_projection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = opus_projection.h; path = opus/include/opus_projection.h; sourceTree = SOURCE_ROOT; };
+		178069E325B5D97700795933 /* opus_defines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = opus_defines.h; path = opus/include/opus_defines.h; sourceTree = SOURCE_ROOT; };
+		178069F725B5DD1100795933 /* opus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = opus.h; path = opus/include/opus.h; sourceTree = SOURCE_ROOT; };
+		17E5BE3E25C93DBF0061F232 /* Config.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = "<group>"; };
+		D4D822D41DC9612800946CA2 /* YbridOpus.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = YbridOpus.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1725463425BE0DC8004EC45A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1718AF5C25CADB0D00172099 /* libopus_catalyst.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1762BBB325B81D180045655C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1718AF5825CADB0D00172099 /* libopus_osx.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D4D822D01DC9612800946CA2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1718AF5425CADB0D00172099 /* libopus_ios.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1718AF2C25CAD81700172099 /* opus-swift */ = {
+			isa = PBXGroup;
+			children = (
+				1718AF2D25CAD81700172099 /* opus_swift.h */,
+				1718AF2E25CAD81700172099 /* module.modulemap */,
+				1718AF2F25CAD81700172099 /* Info.plist */,
+			);
+			path = "opus-swift";
+			sourceTree = "<group>";
+		};
+		1718AF5025CADAA700172099 /* libs */ = {
+			isa = PBXGroup;
+			children = (
+				1718AF5325CADB0D00172099 /* libopus_catalyst.a */,
+				1718AF5125CADB0D00172099 /* libopus_ios.a */,
+				1718AF5225CADB0D00172099 /* libopus_osx.a */,
+			);
+			path = libs;
+			sourceTree = "<group>";
+		};
+		178069FB25B5DDA800795933 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D4D822CA1DC9612800946CA2 = {
+			isa = PBXGroup;
+			children = (
+				17E5BE3E25C93DBF0061F232 /* Config.xcconfig */,
+				1718AF2C25CAD81700172099 /* opus-swift */,
+				D4D822D61DC9612800946CA2 /* opus */,
+				D4D822D51DC9612800946CA2 /* Products */,
+				178069FB25B5DDA800795933 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		D4D822D51DC9612800946CA2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D4D822D41DC9612800946CA2 /* YbridOpus.framework */,
+				1762BBC025B81D180045655C /* YbridOpus.framework */,
+				1725464125BE0DC8004EC45A /* YbridOpus.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D4D822D61DC9612800946CA2 /* opus */ = {
+			isa = PBXGroup;
+			children = (
+				1718AF5025CADAA700172099 /* libs */,
+				D4D822ED1DC9698B00946CA2 /* include */,
+			);
+			path = opus;
+			sourceTree = "<group>";
+		};
+		D4D822ED1DC9698B00946CA2 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				178069F725B5DD1100795933 /* opus.h */,
+				178069E325B5D97700795933 /* opus_defines.h */,
+				178069E125B5D97700795933 /* opus_multistream.h */,
+				178069E225B5D97700795933 /* opus_projection.h */,
+				178069E025B5D97700795933 /* opus_types.h */,
+			);
+			name = include;
+			path = ../../dependencies/include;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		1725463625BE0DC8004EC45A /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1718AF3225CAD81700172099 /* opus_swift.h in Headers */,
+				1725463825BE0DC8004EC45A /* opus_defines.h in Headers */,
+				1725463925BE0DC8004EC45A /* opus_types.h in Headers */,
+				1725463A25BE0DC8004EC45A /* opus_multistream.h in Headers */,
+				1725463B25BE0DC8004EC45A /* opus.h in Headers */,
+				1725463C25BE0DC8004EC45A /* opus_projection.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1762BBB525B81D180045655C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1718AF3125CAD81700172099 /* opus_swift.h in Headers */,
+				1762BBB725B81D180045655C /* opus_defines.h in Headers */,
+				1762BBB825B81D180045655C /* opus_types.h in Headers */,
+				1762BBB925B81D180045655C /* opus_multistream.h in Headers */,
+				1762BBBA25B81D180045655C /* opus.h in Headers */,
+				1762BBBB25B81D180045655C /* opus_projection.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D4D822D11DC9612800946CA2 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1718AF3025CAD81700172099 /* opus_swift.h in Headers */,
+				178069E725B5D97700795933 /* opus_defines.h in Headers */,
+				178069E425B5D97700795933 /* opus_types.h in Headers */,
+				178069E525B5D97700795933 /* opus_multistream.h in Headers */,
+				178069F825B5DD1100795933 /* opus.h in Headers */,
+				178069E625B5D97700795933 /* opus_projection.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		1725463225BE0DC8004EC45A /* opus_catalyst */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1725463E25BE0DC8004EC45A /* Build configuration list for PBXNativeTarget "opus_catalyst" */;
+			buildPhases = (
+				1725463325BE0DC8004EC45A /* Sources */,
+				1725463425BE0DC8004EC45A /* Frameworks */,
+				1725463625BE0DC8004EC45A /* Headers */,
+				1725463D25BE0DC8004EC45A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = opus_catalyst;
+			productName = opus;
+			productReference = 1725464125BE0DC8004EC45A /* YbridOpus.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		1762BBB125B81D180045655C /* opus_macos */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1762BBBD25B81D180045655C /* Build configuration list for PBXNativeTarget "opus_macos" */;
+			buildPhases = (
+				1762BBB225B81D180045655C /* Sources */,
+				1762BBB325B81D180045655C /* Frameworks */,
+				1762BBB525B81D180045655C /* Headers */,
+				1762BBBC25B81D180045655C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = opus_macos;
+			productName = opus;
+			productReference = 1762BBC025B81D180045655C /* YbridOpus.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		D4D822D31DC9612800946CA2 /* opus_ios */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D4D822DC1DC9612800946CA2 /* Build configuration list for PBXNativeTarget "opus_ios" */;
+			buildPhases = (
+				D4D822CF1DC9612800946CA2 /* Sources */,
+				D4D822D01DC9612800946CA2 /* Frameworks */,
+				D4D822D11DC9612800946CA2 /* Headers */,
+				D4D822D21DC9612800946CA2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = opus_ios;
+			productName = opus;
+			productReference = D4D822D41DC9612800946CA2 /* YbridOpus.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D4D822CB1DC9612800946CA2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1230;
+				ORGANIZATIONNAME = "Viv Labs, Inc.";
+				TargetAttributes = {
+					1725463225BE0DC8004EC45A = {
+						DevelopmentTeam = PF7PNM95XY;
+					};
+					1762BBB125B81D180045655C = {
+						DevelopmentTeam = PF7PNM95XY;
+						LastSwiftMigration = 1230;
+					};
+					D4D822D31DC9612800946CA2 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = PF7PNM95XY;
+						LastSwiftMigration = 1230;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = D4D822CE1DC9612800946CA2 /* Build configuration list for PBXProject "opus-swift" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D4D822CA1DC9612800946CA2;
+			productRefGroup = D4D822D51DC9612800946CA2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D4D822D31DC9612800946CA2 /* opus_ios */,
+				1762BBB125B81D180045655C /* opus_macos */,
+				1725463225BE0DC8004EC45A /* opus_catalyst */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1725463D25BE0DC8004EC45A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				17E5BE4125C93DBF0061F232 /* Config.xcconfig in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1762BBBC25B81D180045655C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				17E5BE4025C93DBF0061F232 /* Config.xcconfig in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D4D822D21DC9612800946CA2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				17E5BE3F25C93DBF0061F232 /* Config.xcconfig in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1725463325BE0DC8004EC45A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1762BBB225B81D180045655C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D4D822CF1DC9612800946CA2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		1725463F25BE0DC8004EC45A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 17E5BE3E25C93DBF0061F232 /* Config.xcconfig */;
+			buildSettings = {
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = PF7PNM95XY;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/../dependencies/lib";
+				INFOPLIST_FILE = "opus-swift/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/../dependencies/lib",
+					"$(PROJECT_DIR)/opus/libs",
+				);
+				MARKETING_VERSION = "$(MARKETING_VERSION)";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = "-all_load";
+				PRODUCT_BUNDLE_IDENTIFIER = "io.ybrid.opus-swift";
+				PRODUCT_NAME = "$(inherited)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = NO;
+				SUPPORTED_PLATFORMS = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2,6";
+			};
+			name = Debug;
+		};
+		1725464025BE0DC8004EC45A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 17E5BE3E25C93DBF0061F232 /* Config.xcconfig */;
+			buildSettings = {
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = PF7PNM95XY;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/../dependencies/lib";
+				INFOPLIST_FILE = "opus-swift/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/../dependencies/lib",
+					"$(PROJECT_DIR)/opus/libs",
+				);
+				MARKETING_VERSION = "$(MARKETING_VERSION)";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = "-all_load";
+				PRODUCT_BUNDLE_IDENTIFIER = "io.ybrid.opus-swift";
+				PRODUCT_NAME = "$(inherited)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = NO;
+				SUPPORTED_PLATFORMS = macosx;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2,6";
+			};
+			name = Release;
+		};
+		1762BBBE25B81D180045655C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 17E5BE3E25C93DBF0061F232 /* Config.xcconfig */;
+			buildSettings = {
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = PF7PNM95XY;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/../dependencies/lib";
+				INFOPLIST_FILE = "opus-swift/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/../dependencies/lib",
+					"$(PROJECT_DIR)/opus/libs",
+				);
+				MARKETING_VERSION = "$(MARKETING_VERSION)";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = "-all_load";
+				PRODUCT_BUNDLE_IDENTIFIER = "io.ybrid.opus-swift";
+				PRODUCT_NAME = "$(inherited)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = NO;
+				SUPPORTED_PLATFORMS = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2,6";
+			};
+			name = Debug;
+		};
+		1762BBBF25B81D180045655C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 17E5BE3E25C93DBF0061F232 /* Config.xcconfig */;
+			buildSettings = {
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = PF7PNM95XY;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/../dependencies/lib";
+				INFOPLIST_FILE = "opus-swift/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/../dependencies/lib",
+					"$(PROJECT_DIR)/opus/libs",
+				);
+				MARKETING_VERSION = "$(MARKETING_VERSION)";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = "-all_load";
+				PRODUCT_BUNDLE_IDENTIFIER = "io.ybrid.opus-swift";
+				PRODUCT_NAME = "$(inherited)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = NO;
+				SUPPORTED_PLATFORMS = macosx;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2,6";
+			};
+			name = Release;
+		};
+		D4D822DA1DC9612800946CA2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 17E5BE3E25C93DBF0061F232 /* Config.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MARKETING_VERSION = 0.6.8;
+				MODULEMAP_FILE = "opus-swift/module.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = NO;
+				PRODUCT_NAME = YbridOpus;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Debug;
+		};
+		D4D822DB1DC9612800946CA2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 17E5BE3E25C93DBF0061F232 /* Config.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MARKETING_VERSION = 0.6.8;
+				MODULEMAP_FILE = "opus-swift/module.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				ONLY_ACTIVE_ARCH = NO;
+				PRODUCT_NAME = YbridOpus;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Release;
+		};
+		D4D822DD1DC9612800946CA2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 17E5BE3E25C93DBF0061F232 /* Config.xcconfig */;
+			buildSettings = {
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = PF7PNM95XY;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/../dependencies/lib";
+				INFOPLIST_FILE = "opus-swift/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/../dependencies/lib",
+					"$(PROJECT_DIR)/opus/libs",
+				);
+				MARKETING_VERSION = "$(MARKETING_VERSION)";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = "-all_load";
+				PRODUCT_BUNDLE_IDENTIFIER = "io.ybrid.opus-swift";
+				PRODUCT_NAME = "$(inherited)";
+				SKIP_INSTALL = NO;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos macosx";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		D4D822DE1DC9612800946CA2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 17E5BE3E25C93DBF0061F232 /* Config.xcconfig */;
+			buildSettings = {
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = PF7PNM95XY;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/../dependencies/lib";
+				INFOPLIST_FILE = "opus-swift/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/../dependencies/lib",
+					"$(PROJECT_DIR)/opus/libs",
+				);
+				MARKETING_VERSION = "$(MARKETING_VERSION)";
+				OTHER_LDFLAGS = "-all_load";
+				PRODUCT_BUNDLE_IDENTIFIER = "io.ybrid.opus-swift";
+				PRODUCT_NAME = "$(inherited)";
+				SKIP_INSTALL = NO;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos macosx";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1725463E25BE0DC8004EC45A /* Build configuration list for PBXNativeTarget "opus_catalyst" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1725463F25BE0DC8004EC45A /* Debug */,
+				1725464025BE0DC8004EC45A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1762BBBD25B81D180045655C /* Build configuration list for PBXNativeTarget "opus_macos" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1762BBBE25B81D180045655C /* Debug */,
+				1762BBBF25B81D180045655C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D4D822CE1DC9612800946CA2 /* Build configuration list for PBXProject "opus-swift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D4D822DA1DC9612800946CA2 /* Debug */,
+				D4D822DB1DC9612800946CA2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D4D822DC1DC9612800946CA2 /* Build configuration list for PBXNativeTarget "opus_ios" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D4D822DD1DC9612800946CA2 /* Debug */,
+				D4D822DE1DC9612800946CA2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D4D822CB1DC9612800946CA2 /* Project object */;
+}
