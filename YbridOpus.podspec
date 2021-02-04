@@ -5,7 +5,7 @@
 #
 Pod::Spec.new do |s|
     s.name             = 'YbridOpus'
-    s.version          = '0.6.8'
+    s.version          = '0.7.0'
     s.summary          = 'Opus xcframework for iOS and macOS.'
     s.description      = <<-DESC
     XCFramework to use Opus Interactive Audio Codec within Swift source.
@@ -14,8 +14,8 @@ Pod::Spec.new do |s|
     s.homepage         = 'https://github.com/ybrid/opus-swift'
     s.license          = { :type => 'MIT', :file => 'LICENSE' }
     s.author           = { 'Florian Nowotny' => 'Florian.Nowotny@nacamar.de' }
-    s.source           = { :git => 'git@github.com:ybrid/opus-swift.git', :tag => s.version.to_s }
-    
+    s.source           = { :http => 'https://github.com/ybrid/opus-swift/releases/download/'+s.version.to_s+'/YbridOpus.xcframework.zip' }
+
     s.ios.deployment_target = '9.0'
     s.osx.deployment_target = '10.10'
     s.pod_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }

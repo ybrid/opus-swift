@@ -21,3 +21,5 @@ DerivedData
 **/build-*.log
 prepare/
 *.log
+*.xcframework
+*.xcframework.zip
