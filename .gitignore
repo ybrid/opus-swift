@@ -17,7 +17,7 @@ DerivedData
 *.hmap
 *.xccheckout
 
-# nacamar's builds create libopus and xcframework
+# nacamar's build creates xcframework
 **/build-*.log
 prepare/
 *.log
