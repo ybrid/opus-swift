@@ -5,7 +5,7 @@
 #
 Pod::Spec.new do |s|
     s.name             = 'YbridOpus'
-    s.version          = '0.7.0'
+    s.version          = '0.7.1'
     s.summary          = 'Opus xcframework for iOS and macOS.'
     s.description      = <<-DESC
     XCFramework to use Opus Interactive Audio Codec within Swift source.
