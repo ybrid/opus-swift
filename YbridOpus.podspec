@@ -48,7 +48,7 @@ Pod::Spec.new do |s|
         Broadcom Corporation:
         https://datatracker.ietf.org/ipr/1526/
     
-        LICENSE
+                          LICENSE
                         }
     s.author           = { 'Florian Nowotny' => 'Florian.Nowotny@nacamar.de' }
     s.source           = { :http => 'https://github.com/ybrid/opus-swift/releases/download/'+s.version.to_s+'/YbridOpus.xcframework.zip' }

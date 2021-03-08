@@ -38,7 +38,7 @@ opuspath=../opus
 opusArtifact=.libs/libopus.a
 
 tmp=./prepare
-fatLibsDest=opus/libs
+fatLibsDest=opus-swift/libs
 
 generateLibopus()
 {

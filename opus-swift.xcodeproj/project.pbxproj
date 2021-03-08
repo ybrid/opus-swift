@@ -10,9 +10,6 @@
 		1718AF3025CAD81700172099 /* opus_swift.h in Headers */ = {isa = PBXBuildFile; fileRef = 1718AF2D25CAD81700172099 /* opus_swift.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1718AF3125CAD81700172099 /* opus_swift.h in Headers */ = {isa = PBXBuildFile; fileRef = 1718AF2D25CAD81700172099 /* opus_swift.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1718AF3225CAD81700172099 /* opus_swift.h in Headers */ = {isa = PBXBuildFile; fileRef = 1718AF2D25CAD81700172099 /* opus_swift.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1718AF5425CADB0D00172099 /* libopus_ios.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1718AF5125CADB0D00172099 /* libopus_ios.a */; };
-		1718AF5825CADB0D00172099 /* libopus_osx.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1718AF5225CADB0D00172099 /* libopus_osx.a */; };
-		1718AF5C25CADB0D00172099 /* libopus_catalyst.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1718AF5325CADB0D00172099 /* libopus_catalyst.a */; };
 		1732224625F6512100AEC833 /* opus.h in Headers */ = {isa = PBXBuildFile; fileRef = 1732224125F6512100AEC833 /* opus.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1732224725F6512100AEC833 /* opus.h in Headers */ = {isa = PBXBuildFile; fileRef = 1732224125F6512100AEC833 /* opus.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1732224825F6512100AEC833 /* opus.h in Headers */ = {isa = PBXBuildFile; fileRef = 1732224125F6512100AEC833 /* opus.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -28,6 +25,9 @@
 		1732225225F6512100AEC833 /* opus_projection.h in Headers */ = {isa = PBXBuildFile; fileRef = 1732224525F6512100AEC833 /* opus_projection.h */; };
 		1732225325F6512100AEC833 /* opus_projection.h in Headers */ = {isa = PBXBuildFile; fileRef = 1732224525F6512100AEC833 /* opus_projection.h */; };
 		1732225425F6512100AEC833 /* opus_projection.h in Headers */ = {isa = PBXBuildFile; fileRef = 1732224525F6512100AEC833 /* opus_projection.h */; };
+		1732228C25F6662A00AEC833 /* libopus_ios.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1732228925F6662A00AEC833 /* libopus_ios.a */; };
+		1732229125F6662A00AEC833 /* libopus_catalyst.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1732228A25F6662A00AEC833 /* libopus_catalyst.a */; };
+		1732229325F6662A00AEC833 /* libopus_osx.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1732228B25F6662A00AEC833 /* libopus_osx.a */; };
 		17E5BE3F25C93DBF0061F232 /* Config.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 17E5BE3E25C93DBF0061F232 /* Config.xcconfig */; };
 		17E5BE4025C93DBF0061F232 /* Config.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 17E5BE3E25C93DBF0061F232 /* Config.xcconfig */; };
 		17E5BE4125C93DBF0061F232 /* Config.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 17E5BE3E25C93DBF0061F232 /* Config.xcconfig */; };
@@ -57,15 +57,16 @@
 		1718AF2D25CAD81700172099 /* opus_swift.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = opus_swift.h; sourceTree = "<group>"; };
 		1718AF2E25CAD81700172099 /* module.modulemap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; path = module.modulemap; sourceTree = "<group>"; };
 		1718AF2F25CAD81700172099 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		1718AF5125CADB0D00172099 /* libopus_ios.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libopus_ios.a; sourceTree = "<group>"; };
-		1718AF5225CADB0D00172099 /* libopus_osx.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libopus_osx.a; sourceTree = "<group>"; };
-		1718AF5325CADB0D00172099 /* libopus_catalyst.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libopus_catalyst.a; sourceTree = "<group>"; };
 		1725464125BE0DC8004EC45A /* YbridOpus.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = YbridOpus.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1732224125F6512100AEC833 /* opus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = opus.h; sourceTree = "<group>"; };
 		1732224225F6512100AEC833 /* opus_multistream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = opus_multistream.h; sourceTree = "<group>"; };
 		1732224325F6512100AEC833 /* opus_types.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = opus_types.h; sourceTree = "<group>"; };
 		1732224425F6512100AEC833 /* opus_defines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = opus_defines.h; sourceTree = "<group>"; };
 		1732224525F6512100AEC833 /* opus_projection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = opus_projection.h; sourceTree = "<group>"; };
+		1732228725F665FF00AEC833 /* libopus_ios.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libopus_ios.a; path = "opus-swift/libs/libopus_ios.a"; sourceTree = "<group>"; };
+		1732228925F6662A00AEC833 /* libopus_ios.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libopus_ios.a; sourceTree = "<group>"; };
+		1732228A25F6662A00AEC833 /* libopus_catalyst.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libopus_catalyst.a; sourceTree = "<group>"; };
+		1732228B25F6662A00AEC833 /* libopus_osx.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libopus_osx.a; sourceTree = "<group>"; };
 		1762BBC025B81D180045655C /* YbridOpus.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = YbridOpus.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		17E5BE3E25C93DBF0061F232 /* Config.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = "<group>"; };
 		17EE827F25CBF086002F15B3 /* opus-swiftMacTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "opus-swiftMacTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -80,7 +81,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1718AF5C25CADB0D00172099 /* libopus_catalyst.a in Frameworks */,
+				1732229125F6662A00AEC833 /* libopus_catalyst.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -88,7 +89,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1718AF5825CADB0D00172099 /* libopus_osx.a in Frameworks */,
+				1732229325F6662A00AEC833 /* libopus_osx.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -110,7 +111,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1718AF5425CADB0D00172099 /* libopus_ios.a in Frameworks */,
+				1732228C25F6662A00AEC833 /* libopus_ios.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -120,22 +121,13 @@
 		1718AF2C25CAD81700172099 /* opus-swift */ = {
 			isa = PBXGroup;
 			children = (
+				1732228825F6662A00AEC833 /* libs */,
 				1732224025F6512100AEC833 /* include */,
 				1718AF2D25CAD81700172099 /* opus_swift.h */,
 				1718AF2E25CAD81700172099 /* module.modulemap */,
 				1718AF2F25CAD81700172099 /* Info.plist */,
 			);
 			path = "opus-swift";
-			sourceTree = "<group>";
-		};
-		1718AF5025CADAA700172099 /* libs */ = {
-			isa = PBXGroup;
-			children = (
-				1718AF5325CADB0D00172099 /* libopus_catalyst.a */,
-				1718AF5125CADB0D00172099 /* libopus_ios.a */,
-				1718AF5225CADB0D00172099 /* libopus_osx.a */,
-			);
-			path = libs;
 			sourceTree = "<group>";
 		};
 		1732224025F6512100AEC833 /* include */ = {
@@ -150,9 +142,20 @@
 			path = include;
 			sourceTree = "<group>";
 		};
+		1732228825F6662A00AEC833 /* libs */ = {
+			isa = PBXGroup;
+			children = (
+				1732228925F6662A00AEC833 /* libopus_ios.a */,
+				1732228A25F6662A00AEC833 /* libopus_catalyst.a */,
+				1732228B25F6662A00AEC833 /* libopus_osx.a */,
+			);
+			path = libs;
+			sourceTree = "<group>";
+		};
 		178069FB25B5DDA800795933 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				1732228725F665FF00AEC833 /* libopus_ios.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -171,7 +174,6 @@
 			children = (
 				17E5BE3E25C93DBF0061F232 /* Config.xcconfig */,
 				1718AF2C25CAD81700172099 /* opus-swift */,
-				D4D822D61DC9612800946CA2 /* opus */,
 				17EE828025CBF086002F15B3 /* opus-swiftUITests */,
 				D4D822D51DC9612800946CA2 /* Products */,
 				178069FB25B5DDA800795933 /* Frameworks */,
@@ -188,14 +190,6 @@
 				17EE836325CBFD1B002F15B3 /* opus-swiftIOSTests.xctest */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		D4D822D61DC9612800946CA2 /* opus */ = {
-			isa = PBXGroup;
-			children = (
-				1718AF5025CADAA700172099 /* libs */,
-			);
-			path = opus;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -506,6 +500,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/../dependencies/lib",
 					"$(PROJECT_DIR)/opus/libs",
+					"$(PROJECT_DIR)/opus-swift/libs",
 				);
 				MARKETING_VERSION = "$(MARKETING_VERSION)";
 				ONLY_ACTIVE_ARCH = NO;
@@ -541,6 +536,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/../dependencies/lib",
 					"$(PROJECT_DIR)/opus/libs",
+					"$(PROJECT_DIR)/opus-swift/libs",
 				);
 				MARKETING_VERSION = "$(MARKETING_VERSION)";
 				ONLY_ACTIVE_ARCH = NO;
@@ -575,6 +571,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/../dependencies/lib",
 					"$(PROJECT_DIR)/opus/libs",
+					"$(PROJECT_DIR)/opus-swift/libs",
 				);
 				MARKETING_VERSION = "$(MARKETING_VERSION)";
 				ONLY_ACTIVE_ARCH = NO;
@@ -610,6 +607,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/../dependencies/lib",
 					"$(PROJECT_DIR)/opus/libs",
+					"$(PROJECT_DIR)/opus-swift/libs",
 				);
 				MARKETING_VERSION = "$(MARKETING_VERSION)";
 				ONLY_ACTIVE_ARCH = NO;
@@ -866,6 +864,7 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/opus/libs",
+					"$(PROJECT_DIR)/opus-swift/libs",
 				);
 				MARKETING_VERSION = "$(MARKETING_VERSION)";
 				ONLY_ACTIVE_ARCH = NO;
@@ -898,6 +897,7 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/opus/libs",
+					"$(PROJECT_DIR)/opus-swift/libs",
 				);
 				MARKETING_VERSION = "$(MARKETING_VERSION)";
 				OTHER_LDFLAGS = "-all_load";

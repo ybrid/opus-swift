@@ -51,14 +51,14 @@ cp -R "$archivesPath/$platform.xcarchive/$generatedPath" "$builtPath/Archive-$pl
 
 platform=iphonesimulator
 scheme=opus_ios
-echo "building for $platform...."
+echo "building for $platform..."
 xcodebuild archive $pj -scheme $scheme -destination="iOS Simulator" -sdk $platform -derivedDataPath $dd -archivePath "$archivesPath/$platform.xcarchive" $opts > "build-$config-$platform.log"
 cp -R "$archivesPath/$platform.xcarchive/$generatedPath" "$builtPath/Archive-$platform"
 
 # Mac Catalyst needs Xcode >= 11.0
 platform=maccatalyst
 scheme=opus_catalyst
-echo "building for $platform...."
+echo "building for $platform..."
 xcodebuild archive $pj -scheme $scheme -destination 'platform=macOS,variant=Mac Catalyst' -archs="x86_64h" -derivedDataPath $dd -archivePath "$archivesPath/$platform.xcarchive" $opts > "build-$config-$platform.log"
 cp -R "$archivesPath/$platform.xcarchive/$generatedPath" "$builtPath/Archive-$platform"
 
