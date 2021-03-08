@@ -46,26 +46,31 @@ pj="-project opus-swift.xcodeproj"
 platform=iphoneos
 scheme=opus_ios
 echo "building for $platform..."
-xcodebuild archive $pj -scheme $scheme -destination="iOS" -sdk $platform -derivedDataPath $dd -archivePath "$archivesPath/$platform.xcarchive" $opts > "build-$config-$platform.log"
+xcodebuild archive $pj -scheme $scheme -destination="iOS" -sdk $platform -derivedDataPath $dd \
+    -archivePath "$archivesPath/$platform.xcarchive" $opts > "build-$platform.log"
 cp -R "$archivesPath/$platform.xcarchive/$generatedPath" "$builtPath/Archive-$platform"
 
 platform=iphonesimulator
 scheme=opus_ios
 echo "building for $platform..."
-xcodebuild archive $pj -scheme $scheme -destination="iOS Simulator" -sdk $platform -derivedDataPath $dd -archivePath "$archivesPath/$platform.xcarchive" $opts > "build-$config-$platform.log"
+xcodebuild archive $pj -scheme $scheme -destination="iOS Simulator" -sdk $platform -derivedDataPath $dd \
+    -archivePath "$archivesPath/$platform.xcarchive" $opts > "build-$platform.log"
 cp -R "$archivesPath/$platform.xcarchive/$generatedPath" "$builtPath/Archive-$platform"
 
 # Mac Catalyst needs Xcode >= 11.0
 platform=maccatalyst
 scheme=opus_catalyst
 echo "building for $platform..."
-xcodebuild archive $pj -scheme $scheme -destination 'platform=macOS,variant=Mac Catalyst' -archs="x86_64h" -derivedDataPath $dd -archivePath "$archivesPath/$platform.xcarchive" $opts > "build-$config-$platform.log"
+#-sdk macosx ?
+xcodebuild archive $pj -scheme $scheme -archs="x86_64h" -destination "generic/platform=macOS,variant=Mac Catalyst,name=Any Mac" -derivedDataPath $dd \
+    -archivePath "$archivesPath/$platform.xcarchive" $opts > "build-$platform.log"
 cp -R "$archivesPath/$platform.xcarchive/$generatedPath" "$builtPath/Archive-$platform"
 
 platform=macosx
 scheme=opus_macos
 echo "building for $platform..."
-xcodebuild archive $pj -scheme $scheme -destination='My Mac' -sdk $platform -derivedDataPath $dd -archivePath "$archivesPath/$platform.xcarchive" $opts > "build-$config-$platform.log"
+xcodebuild archive $pj -scheme $scheme -destination='My Mac' -sdk $platform -derivedDataPath $dd \
+    -archivePath "$archivesPath/$platform.xcarchive" $opts > "build-$platform.log"
 cp -R "$archivesPath/$platform.xcarchive/$generatedPath" "$builtPath/Archive-$platform"
 
 # name of final xcframework

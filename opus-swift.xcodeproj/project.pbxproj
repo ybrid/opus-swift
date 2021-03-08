@@ -28,16 +28,16 @@
 		1732228C25F6662A00AEC833 /* libopus_ios.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1732228925F6662A00AEC833 /* libopus_ios.a */; };
 		1732229125F6662A00AEC833 /* libopus_catalyst.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1732228A25F6662A00AEC833 /* libopus_catalyst.a */; };
 		1732229325F6662A00AEC833 /* libopus_osx.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1732228B25F6662A00AEC833 /* libopus_osx.a */; };
+		1732231025F6959100AEC833 /* opus_swiftPlatformTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17EE837625CBFD79002F15B3 /* opus_swiftPlatformTests.swift */; };
 		17E5BE3F25C93DBF0061F232 /* Config.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 17E5BE3E25C93DBF0061F232 /* Config.xcconfig */; };
 		17E5BE4025C93DBF0061F232 /* Config.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 17E5BE3E25C93DBF0061F232 /* Config.xcconfig */; };
 		17E5BE4125C93DBF0061F232 /* Config.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 17E5BE3E25C93DBF0061F232 /* Config.xcconfig */; };
-		17EE831625CBF909002F15B3 /* opus_swiftMacTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17EE828125CBF086002F15B3 /* opus_swiftMacTests.swift */; };
-		17EE837725CBFD79002F15B3 /* opus_swiftIOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17EE837625CBFD79002F15B3 /* opus_swiftIOSTests.swift */; };
+		17EE837725CBFD79002F15B3 /* opus_swiftPlatformTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17EE837625CBFD79002F15B3 /* opus_swiftPlatformTests.swift */; };
 		17EE83BA25CC0D47002F15B3 /* YbridOpus.framework in Resources */ = {isa = PBXBuildFile; fileRef = D4D822D41DC9612800946CA2 /* YbridOpus.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		17EE82DC25CBF4BB002F15B3 /* PBXContainerItemProxy */ = {
+		1732230325F6925300AEC833 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D4D822CB1DC9612800946CA2 /* Project object */;
 			proxyType = 1;
@@ -70,9 +70,8 @@
 		1762BBC025B81D180045655C /* YbridOpus.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = YbridOpus.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		17E5BE3E25C93DBF0061F232 /* Config.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = "<group>"; };
 		17EE827F25CBF086002F15B3 /* opus-swiftMacTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "opus-swiftMacTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		17EE828125CBF086002F15B3 /* opus_swiftMacTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = opus_swiftMacTests.swift; sourceTree = "<group>"; };
 		17EE836325CBFD1B002F15B3 /* opus-swiftIOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "opus-swiftIOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		17EE837625CBFD79002F15B3 /* opus_swiftIOSTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = opus_swiftIOSTests.swift; sourceTree = "<group>"; };
+		17EE837625CBFD79002F15B3 /* opus_swiftPlatformTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = opus_swiftPlatformTests.swift; sourceTree = "<group>"; };
 		D4D822D41DC9612800946CA2 /* YbridOpus.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = YbridOpus.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -163,8 +162,7 @@
 		17EE828025CBF086002F15B3 /* opus-swiftUITests */ = {
 			isa = PBXGroup;
 			children = (
-				17EE837625CBFD79002F15B3 /* opus_swiftIOSTests.swift */,
-				17EE828125CBF086002F15B3 /* opus_swiftMacTests.swift */,
+				17EE837625CBFD79002F15B3 /* opus_swiftPlatformTests.swift */,
 			);
 			path = "opus-swiftUITests";
 			sourceTree = "<group>";
@@ -284,7 +282,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				17EE82DD25CBF4BB002F15B3 /* PBXTargetDependency */,
+				1732230425F6925300AEC833 /* PBXTargetDependency */,
 			);
 			name = "opus-swiftMacTests";
 			productName = "opus-swiftUITests";
@@ -444,7 +442,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				17EE831625CBF909002F15B3 /* opus_swiftMacTests.swift in Sources */,
+				1732231025F6959100AEC833 /* opus_swiftPlatformTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -452,7 +450,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				17EE837725CBFD79002F15B3 /* opus_swiftIOSTests.swift in Sources */,
+				17EE837725CBFD79002F15B3 /* opus_swiftPlatformTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -466,10 +464,10 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		17EE82DD25CBF4BB002F15B3 /* PBXTargetDependency */ = {
+		1732230425F6925300AEC833 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 1762BBB125B81D180045655C /* opus_macos */;
-			targetProxy = 17EE82DC25CBF4BB002F15B3 /* PBXContainerItemProxy */;
+			targetProxy = 1732230325F6925300AEC833 /* PBXContainerItemProxy */;
 		};
 		17EE837025CBFD34002F15B3 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;

@@ -26,7 +26,7 @@
 import XCTest
 import YbridOpus
 
-class opus_swiftMacTests: XCTestCase {
+class opus_swiftPlatformTests: XCTestCase {
 
     func testOpusVersionString() throws {
         let versionString = String(cString: opus_get_version_string())
