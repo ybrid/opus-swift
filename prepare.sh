@@ -34,8 +34,9 @@ iosSDKVersion="14.4"
 osxSDKVersion="11.1"
 
 here=$(pwd)
-opuspath=../opus
+opuspath=./opus
 opusArtifact=.libs/libopus.a
+opusHeaders="$opuspath/include"
 
 tmp=./prepare
 fatLibsDest=opus-swift/libs
@@ -133,5 +134,14 @@ cp -v $tmp/$fatProductCatalyst $fatLibsDest
 lipo -info $fatLibsDest/$fatProductCatalyst
 echo "$fatLibsDest/$fatProductCatalyst ready."
 echo "\n==========================="
+echo "generating libraries done."
 
-echo "done."
+echo "\n==========================="
+cd $here
+echo "copy headers into opus-swift.xcodeproj"
+for f in $opusHeaders/*.h; do
+    file=`basename $f`
+    cp -v $f ./opus-swift/include
+done
+echo "opus-swift.xcodeproj is ready, check $logfile"
+

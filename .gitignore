@@ -17,9 +17,11 @@ DerivedData
 *.hmap
 *.xccheckout
 
-# nacamar's build creates xcframework
-**/build-*.log
-prepare/
+# nacamar's prepare.sh and build.sh steps reates xcframework
 *.log
+opus
+prepare
+opus-swift/libs/libopus_*.a
+opus-swift/include/*
 *.xcframework
-*.xcframework.zip
+*.zip

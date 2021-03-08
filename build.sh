@@ -82,3 +82,8 @@ done
 cmd="$cmd -output $xcframework"
 #echo "$cmd"
 $cmd
+
+echo "zip $xcframework including LICENSE file..."
+cp LICENSE $xcframework
+zip -q -r $xcframework.zip $xcframework
+echo "done."
