@@ -13,21 +13,21 @@
 		1718AF5425CADB0D00172099 /* libopus_ios.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1718AF5125CADB0D00172099 /* libopus_ios.a */; };
 		1718AF5825CADB0D00172099 /* libopus_osx.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1718AF5225CADB0D00172099 /* libopus_osx.a */; };
 		1718AF5C25CADB0D00172099 /* libopus_catalyst.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1718AF5325CADB0D00172099 /* libopus_catalyst.a */; };
-		1725463825BE0DC8004EC45A /* opus_defines.h in Headers */ = {isa = PBXBuildFile; fileRef = 178069E325B5D97700795933 /* opus_defines.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1725463925BE0DC8004EC45A /* opus_types.h in Headers */ = {isa = PBXBuildFile; fileRef = 178069E025B5D97700795933 /* opus_types.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1725463A25BE0DC8004EC45A /* opus_multistream.h in Headers */ = {isa = PBXBuildFile; fileRef = 178069E125B5D97700795933 /* opus_multistream.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1725463B25BE0DC8004EC45A /* opus.h in Headers */ = {isa = PBXBuildFile; fileRef = 178069F725B5DD1100795933 /* opus.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1725463C25BE0DC8004EC45A /* opus_projection.h in Headers */ = {isa = PBXBuildFile; fileRef = 178069E225B5D97700795933 /* opus_projection.h */; };
-		1762BBB725B81D180045655C /* opus_defines.h in Headers */ = {isa = PBXBuildFile; fileRef = 178069E325B5D97700795933 /* opus_defines.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1762BBB825B81D180045655C /* opus_types.h in Headers */ = {isa = PBXBuildFile; fileRef = 178069E025B5D97700795933 /* opus_types.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1762BBB925B81D180045655C /* opus_multistream.h in Headers */ = {isa = PBXBuildFile; fileRef = 178069E125B5D97700795933 /* opus_multistream.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1762BBBA25B81D180045655C /* opus.h in Headers */ = {isa = PBXBuildFile; fileRef = 178069F725B5DD1100795933 /* opus.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1762BBBB25B81D180045655C /* opus_projection.h in Headers */ = {isa = PBXBuildFile; fileRef = 178069E225B5D97700795933 /* opus_projection.h */; };
-		178069E425B5D97700795933 /* opus_types.h in Headers */ = {isa = PBXBuildFile; fileRef = 178069E025B5D97700795933 /* opus_types.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		178069E525B5D97700795933 /* opus_multistream.h in Headers */ = {isa = PBXBuildFile; fileRef = 178069E125B5D97700795933 /* opus_multistream.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		178069E625B5D97700795933 /* opus_projection.h in Headers */ = {isa = PBXBuildFile; fileRef = 178069E225B5D97700795933 /* opus_projection.h */; };
-		178069E725B5D97700795933 /* opus_defines.h in Headers */ = {isa = PBXBuildFile; fileRef = 178069E325B5D97700795933 /* opus_defines.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		178069F825B5DD1100795933 /* opus.h in Headers */ = {isa = PBXBuildFile; fileRef = 178069F725B5DD1100795933 /* opus.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1732224625F6512100AEC833 /* opus.h in Headers */ = {isa = PBXBuildFile; fileRef = 1732224125F6512100AEC833 /* opus.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1732224725F6512100AEC833 /* opus.h in Headers */ = {isa = PBXBuildFile; fileRef = 1732224125F6512100AEC833 /* opus.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1732224825F6512100AEC833 /* opus.h in Headers */ = {isa = PBXBuildFile; fileRef = 1732224125F6512100AEC833 /* opus.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1732224925F6512100AEC833 /* opus_multistream.h in Headers */ = {isa = PBXBuildFile; fileRef = 1732224225F6512100AEC833 /* opus_multistream.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1732224A25F6512100AEC833 /* opus_multistream.h in Headers */ = {isa = PBXBuildFile; fileRef = 1732224225F6512100AEC833 /* opus_multistream.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1732224B25F6512100AEC833 /* opus_multistream.h in Headers */ = {isa = PBXBuildFile; fileRef = 1732224225F6512100AEC833 /* opus_multistream.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1732224C25F6512100AEC833 /* opus_types.h in Headers */ = {isa = PBXBuildFile; fileRef = 1732224325F6512100AEC833 /* opus_types.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1732224D25F6512100AEC833 /* opus_types.h in Headers */ = {isa = PBXBuildFile; fileRef = 1732224325F6512100AEC833 /* opus_types.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1732224E25F6512100AEC833 /* opus_types.h in Headers */ = {isa = PBXBuildFile; fileRef = 1732224325F6512100AEC833 /* opus_types.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1732224F25F6512100AEC833 /* opus_defines.h in Headers */ = {isa = PBXBuildFile; fileRef = 1732224425F6512100AEC833 /* opus_defines.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1732225025F6512100AEC833 /* opus_defines.h in Headers */ = {isa = PBXBuildFile; fileRef = 1732224425F6512100AEC833 /* opus_defines.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1732225125F6512100AEC833 /* opus_defines.h in Headers */ = {isa = PBXBuildFile; fileRef = 1732224425F6512100AEC833 /* opus_defines.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1732225225F6512100AEC833 /* opus_projection.h in Headers */ = {isa = PBXBuildFile; fileRef = 1732224525F6512100AEC833 /* opus_projection.h */; };
+		1732225325F6512100AEC833 /* opus_projection.h in Headers */ = {isa = PBXBuildFile; fileRef = 1732224525F6512100AEC833 /* opus_projection.h */; };
+		1732225425F6512100AEC833 /* opus_projection.h in Headers */ = {isa = PBXBuildFile; fileRef = 1732224525F6512100AEC833 /* opus_projection.h */; };
 		17E5BE3F25C93DBF0061F232 /* Config.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 17E5BE3E25C93DBF0061F232 /* Config.xcconfig */; };
 		17E5BE4025C93DBF0061F232 /* Config.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 17E5BE3E25C93DBF0061F232 /* Config.xcconfig */; };
 		17E5BE4125C93DBF0061F232 /* Config.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 17E5BE3E25C93DBF0061F232 /* Config.xcconfig */; };
@@ -61,12 +61,12 @@
 		1718AF5225CADB0D00172099 /* libopus_osx.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libopus_osx.a; sourceTree = "<group>"; };
 		1718AF5325CADB0D00172099 /* libopus_catalyst.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libopus_catalyst.a; sourceTree = "<group>"; };
 		1725464125BE0DC8004EC45A /* YbridOpus.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = YbridOpus.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1732224125F6512100AEC833 /* opus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = opus.h; sourceTree = "<group>"; };
+		1732224225F6512100AEC833 /* opus_multistream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = opus_multistream.h; sourceTree = "<group>"; };
+		1732224325F6512100AEC833 /* opus_types.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = opus_types.h; sourceTree = "<group>"; };
+		1732224425F6512100AEC833 /* opus_defines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = opus_defines.h; sourceTree = "<group>"; };
+		1732224525F6512100AEC833 /* opus_projection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = opus_projection.h; sourceTree = "<group>"; };
 		1762BBC025B81D180045655C /* YbridOpus.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = YbridOpus.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		178069E025B5D97700795933 /* opus_types.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = opus_types.h; path = opus/include/opus_types.h; sourceTree = SOURCE_ROOT; };
-		178069E125B5D97700795933 /* opus_multistream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = opus_multistream.h; path = opus/include/opus_multistream.h; sourceTree = SOURCE_ROOT; };
-		178069E225B5D97700795933 /* opus_projection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = opus_projection.h; path = opus/include/opus_projection.h; sourceTree = SOURCE_ROOT; };
-		178069E325B5D97700795933 /* opus_defines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = opus_defines.h; path = opus/include/opus_defines.h; sourceTree = SOURCE_ROOT; };
-		178069F725B5DD1100795933 /* opus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = opus.h; path = opus/include/opus.h; sourceTree = SOURCE_ROOT; };
 		17E5BE3E25C93DBF0061F232 /* Config.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = "<group>"; };
 		17EE827F25CBF086002F15B3 /* opus-swiftMacTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "opus-swiftMacTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		17EE828125CBF086002F15B3 /* opus_swiftMacTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = opus_swiftMacTests.swift; sourceTree = "<group>"; };
@@ -120,6 +120,7 @@
 		1718AF2C25CAD81700172099 /* opus-swift */ = {
 			isa = PBXGroup;
 			children = (
+				1732224025F6512100AEC833 /* include */,
 				1718AF2D25CAD81700172099 /* opus_swift.h */,
 				1718AF2E25CAD81700172099 /* module.modulemap */,
 				1718AF2F25CAD81700172099 /* Info.plist */,
@@ -135,6 +136,18 @@
 				1718AF5225CADB0D00172099 /* libopus_osx.a */,
 			);
 			path = libs;
+			sourceTree = "<group>";
+		};
+		1732224025F6512100AEC833 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				1732224125F6512100AEC833 /* opus.h */,
+				1732224225F6512100AEC833 /* opus_multistream.h */,
+				1732224325F6512100AEC833 /* opus_types.h */,
+				1732224425F6512100AEC833 /* opus_defines.h */,
+				1732224525F6512100AEC833 /* opus_projection.h */,
+			);
+			path = include;
 			sourceTree = "<group>";
 		};
 		178069FB25B5DDA800795933 /* Frameworks */ = {
@@ -181,22 +194,8 @@
 			isa = PBXGroup;
 			children = (
 				1718AF5025CADAA700172099 /* libs */,
-				D4D822ED1DC9698B00946CA2 /* include */,
 			);
 			path = opus;
-			sourceTree = "<group>";
-		};
-		D4D822ED1DC9698B00946CA2 /* include */ = {
-			isa = PBXGroup;
-			children = (
-				178069F725B5DD1100795933 /* opus.h */,
-				178069E325B5D97700795933 /* opus_defines.h */,
-				178069E125B5D97700795933 /* opus_multistream.h */,
-				178069E225B5D97700795933 /* opus_projection.h */,
-				178069E025B5D97700795933 /* opus_types.h */,
-			);
-			name = include;
-			path = ../../dependencies/include;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -206,12 +205,12 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1732224E25F6512100AEC833 /* opus_types.h in Headers */,
 				1718AF3225CAD81700172099 /* opus_swift.h in Headers */,
-				1725463825BE0DC8004EC45A /* opus_defines.h in Headers */,
-				1725463925BE0DC8004EC45A /* opus_types.h in Headers */,
-				1725463A25BE0DC8004EC45A /* opus_multistream.h in Headers */,
-				1725463B25BE0DC8004EC45A /* opus.h in Headers */,
-				1725463C25BE0DC8004EC45A /* opus_projection.h in Headers */,
+				1732225125F6512100AEC833 /* opus_defines.h in Headers */,
+				1732224B25F6512100AEC833 /* opus_multistream.h in Headers */,
+				1732224825F6512100AEC833 /* opus.h in Headers */,
+				1732225425F6512100AEC833 /* opus_projection.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -220,11 +219,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				1718AF3125CAD81700172099 /* opus_swift.h in Headers */,
-				1762BBB725B81D180045655C /* opus_defines.h in Headers */,
-				1762BBB825B81D180045655C /* opus_types.h in Headers */,
-				1762BBB925B81D180045655C /* opus_multistream.h in Headers */,
-				1762BBBA25B81D180045655C /* opus.h in Headers */,
-				1762BBBB25B81D180045655C /* opus_projection.h in Headers */,
+				1732224D25F6512100AEC833 /* opus_types.h in Headers */,
+				1732225025F6512100AEC833 /* opus_defines.h in Headers */,
+				1732224A25F6512100AEC833 /* opus_multistream.h in Headers */,
+				1732224725F6512100AEC833 /* opus.h in Headers */,
+				1732225325F6512100AEC833 /* opus_projection.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -233,11 +232,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				1718AF3025CAD81700172099 /* opus_swift.h in Headers */,
-				178069E725B5D97700795933 /* opus_defines.h in Headers */,
-				178069E425B5D97700795933 /* opus_types.h in Headers */,
-				178069E525B5D97700795933 /* opus_multistream.h in Headers */,
-				178069F825B5DD1100795933 /* opus.h in Headers */,
-				178069E625B5D97700795933 /* opus_projection.h in Headers */,
+				1732224F25F6512100AEC833 /* opus_defines.h in Headers */,
+				1732224C25F6512100AEC833 /* opus_types.h in Headers */,
+				1732224925F6512100AEC833 /* opus_multistream.h in Headers */,
+				1732224625F6512100AEC833 /* opus.h in Headers */,
+				1732225225F6512100AEC833 /* opus_projection.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
