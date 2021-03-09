@@ -32,9 +32,20 @@
 
 iosSDKVersion="14.4"
 osxSDKVersion="11.1"
-
+opusDownload="https://archive.mozilla.org/pub/opus/opus-1.3.1.tar.gz"
 here=$(pwd)
-opuspath=./opus
+
+rm -f opus-*.gz
+wget $opusDownload
+
+libopusDir=`basename $opusDownload | sed "s/\.tar.gz$//"` 
+rm -rf $libopusDir
+tar -xvzf `basename $opusDownload`
+echo "opus sources ready in $libopusDir" 
+echo "\n==========================="
+
+
+opuspath="$here/$libopusDir"
 opusArtifact=.libs/libopus.a
 opusHeaders="$opuspath/include"
 
@@ -143,5 +154,6 @@ for f in $opusHeaders/*.h; do
     file=`basename $f`
     cp -v $f ./opus-swift/include
 done
-echo "opus-swift.xcodeproj is ready, check $logfile"
+echo "opus-swift.xcodeproj is ready"
+echo "done."
 

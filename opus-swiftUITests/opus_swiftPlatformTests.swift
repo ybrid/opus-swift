@@ -1,6 +1,6 @@
 //
-// opus_swiftUITests.swift
-// opus-swiftUITests
+// opus_swiftPlatformTests.swift
+// opus-swift
 //
 // Copyright (c) 2021 nacamar GmbH - Ybrid®, a Hybrid Dynamic Live Audio Technology
 //
