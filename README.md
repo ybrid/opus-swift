@@ -30,5 +30,8 @@ If you manage packages in another way you may download YbridOpus.xcframework.zip
 
 Unzip the file into a directory called 'Frameworks' of your XCode project. In the properties editor, drag and drop the directory into the section 'Frameworks, Libraries and Embedded Content' of the target's 'General' tab.
 
+# Contributing
+You are welcome to [contribute](https://github.com/ybrid/opus-swift/blob/master/CONTRIBUTING.md).
+
 # Licenses
 This project is under MIT license. We create the opus binaries for iOS and macOS from [opus sources of version 1.3.1](https://opus-codec.org/release/stable/2019/04/12/libopus-1_3_1.html). Opus is freely licensed under BSD, see the [LICENSE](https://github.com/ybrid/opus-swift/blob/master/LICENSE) file.
