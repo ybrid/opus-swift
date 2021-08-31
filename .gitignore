@@ -17,7 +17,8 @@ DerivedData
 *.hmap
 *.xccheckout
 
-# nacamar's prepare.sh and build.sh steps create xcframework
+# by nacamar GmbH
+# prepare.sh, build.sh steps and SPM create some files that don't need version control 
 *.log
 opus-?.?.?
 prepare
@@ -26,3 +27,6 @@ opus-swift/include/*
 *.xcframework
 *.zip
 *.gz
+tmp
+.swiftpm
+OpusSwiftLocal

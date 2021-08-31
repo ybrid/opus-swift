@@ -25,7 +25,18 @@ target 'player-sdk-swift' do
   pod 'YbridOpus'
 end
 ```
-## If you don't use CocoaPods
+## If you use Swift Package Management
+The Package.swift using this framework should look like
+```swift 
+  ...
+  dependencies: [
+    .package(
+      name: "YbridOpus", 
+      url: "https://github.com/ybrid/opus-swift.git", 
+      from: "0.8.0"),
+  ...
+```
+## If you don't use CocoaPods or Swift Package Managenment
 If you manage packages in another way you may download YbridOpus.xcframework.zip from [the latest release of this repository](https://github.com/ybrid/opus-swift/releases) and embed it into your own project manually. 
 
 Unzip the file into a directory called 'Frameworks' of your XCode project. In the properties editor, drag and drop the directory into the section 'Frameworks, Libraries and Embedded Content' of the target's 'General' tab.

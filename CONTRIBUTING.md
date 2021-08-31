@@ -9,4 +9,4 @@ We do not own all exisiting ios device types of the past and the future. So try 
 
 ## Tell us your needs
 ### package management
-Currently we support integration with CocoaPods. You may tell us which type of package management you use.
+Currently we support integration with CocoaPods and Swift Package Manager. You may tell us which type of package management you use.
