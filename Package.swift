@@ -3,7 +3,6 @@
 
 import PackageDescription
 
-let version = "0.8.0"
 let package = Package(
     name: "YbridOpus",
     platforms: [
@@ -19,7 +18,7 @@ let package = Package(
     targets: [
         .binaryTarget(
             name: "YbridOpus", 
-            url: "https://github.com/ybrid/opus-swift/releases/download/"+version+"/YbridOpus.xcframework.zip",
+            url: "https://github.com/ybrid/opus-swift/releases/download/0.8.0/YbridOpus.xcframework.zip",
             checksum: "18ea18853b9fab16d0393d39e62c26fd6fbdbba8224345bd3ecbc45540c8aa18"
             )
     ]
