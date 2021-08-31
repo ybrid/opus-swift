@@ -26,6 +26,12 @@
 // Configuration settings file format documentation can be found at:
 // https://help.apple.com/xcode/#/dev745c5c974
 
+// Product Version, PLEASE CHANGE HERE to affect all targets
+MARKETING_VERSION = 0.8.0
+// Build number, PLEASE CHANGE HERE to affect all targets
+CURRENT_PROJECT_VERSION = 3
+
+
 ARCHS = arm64 armv7 x86_64 x86_64h i386
 EXCLUDED_ARCHS[sdk=iphonesimulator*] = arm64
 EXCLUDED_ARCHS[sdk=macosx*] = i386

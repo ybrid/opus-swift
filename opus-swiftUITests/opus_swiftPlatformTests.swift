@@ -48,8 +48,10 @@ class opus_swiftPlatformTests: XCTestCase {
         }
         print("-- infoDictionary is '\(info)'")
         
-        let version = info["CFBundleShortVersionString"]
+        let version = info["CFBundleShortVersionString"] as! String
         XCTAssertNotNil(version)
+        XCTAssertTrue(version.starts(with: "0.8."))
+        
         let name = info["CFBundleName"] as! String
         XCTAssertEqual("YbridOpus", name)
         let copyright = info["NSHumanReadableCopyright"] as! String

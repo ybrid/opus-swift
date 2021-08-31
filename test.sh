@@ -41,7 +41,6 @@ grepToStdoutPattern="^\s*Executed\s\d*\stests|^\*\* TEST"
 scheme=opus-swiftIOSTests
 target=opus-swiftIOSTests
 testing="-only-testing $target/opus_swiftPlatformTests"
-
 platform=iphonesimulator
 device="iPhone 11 Pro"
 logfile=$logbase$device.log
@@ -62,7 +61,8 @@ echo "$result, see $logfile"
 echo "---------------------------------"
 
 # ## You may run tests on your own connected iOS device
-# platform=iphoneos
+platform=iphoneos
+
 # #device="Nacamars iPad Air" # iOS 12
 # #device="Nacamar's iPad Mini" # iOS 9
 # device="iPhone von Florian" # iOS 14
@@ -79,8 +79,8 @@ echo "---------------------------------"
 scheme=opus-swiftMacTests
 target=opus-swiftMacTests
 testing="-only-testing $target/opus_swiftPlatformTests"
-
 platform=macosx
+
 device='Any Mac'
 echo "testing with $platform on $device"
 logfile=$logbase$device.log
@@ -90,7 +90,6 @@ result=`cat "$logfile" | grep -E "$grepToStdoutPattern"`
 echo "$result, see $logfile"
 echo "---------------------------------"
 
-platform=macosx
 device="My Mac"
 echo "testing with $platform on $device"
 logfile=$logbase$device.log

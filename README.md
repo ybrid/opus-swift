@@ -3,7 +3,7 @@ A swift wrapper to use the [Opus Interactive Audio Codec](https://opus-codec.org
 
 Intension of this project is to support [audio player SDK](https://github.com/ybrid/player-sdk-swift) with a platform independend XCFramework that can be integrated in swift projects via CocoaPod.
 
-It supports iOS devices and simulators (version 9 to 14) and macOS (versions 10.10 to 11.2)
+It supports iOS devices and simulators (version 9 to 14) and macOS (versions 10.10 to 11.5)
 
 # Versions
 We support version 1.3.1 of [libopus API](https://opus-codec.org/docs/opus_api-1.3.1).
