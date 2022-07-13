@@ -31,9 +31,6 @@ MARKETING_VERSION = 0.8.0
 // Build number, PLEASE CHANGE HERE to affect all targets
 CURRENT_PROJECT_VERSION = 3
 
-
-ARCHS = arm64 armv7 x86_64 x86_64h i386
-EXCLUDED_ARCHS[sdk=iphonesimulator*] = arm64
 EXCLUDED_ARCHS[sdk=macosx*] = i386
 SUPPORTED_PLATFORMS = iphoneos iphonesimulator macosx
 

@@ -22,32 +22,33 @@
 # OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 # SOFTWARE.
 
-# 
+#
 # Generates fat libopus.a for iOS and for macOS.
-# 
-# Preconditions: 
+#
+# Preconditions:
 # - clang installed
 # - git clone of https://github.com/xiph/opus in directory ../opus
-# - checked iosSDKVersion and osxSDKVersion 
+# - checked iosSDKVersion and osxSDKVersion
 
-iosSDKVersion="14.4"
-osxSDKVersion="11.1"
+iosSDKVersion="15.5"
+osxSDKVersion="12.3"
 opusDownload="https://archive.mozilla.org/pub/opus/opus-1.3.1.tar.gz"
 here=$(pwd)
 
 rm -f opus-*.gz
 wget $opusDownload
 
-libopusDir=`basename $opusDownload | sed "s/\.tar.gz$//"` 
+libopusDir=`basename $opusDownload | sed "s/\.tar.gz$//"`
 rm -rf $libopusDir
 tar -xvzf `basename $opusDownload`
-echo "opus sources ready in $libopusDir" 
+echo "opus sources ready in $libopusDir"
 echo "\n==========================="
 
 
 opuspath="$here/$libopusDir"
 opusArtifact=.libs/libopus.a
 opusHeaders="$opuspath/include"
+opusHeadersDst=./opus-swift/include
 
 tmp=./prepare
 fatLibsDest=opus-swift/libs
@@ -67,12 +68,16 @@ generateLibopus()
 
     cd $opuspath
     make clean > $logfile
-    
-    if [[ $sdkname =~ "iPhone" ]]; then 
+
+    if [[ $sdkname =~ "iPhoneSimulator" ]]; then
+        minversion="-miphonesimulator-version-min=9.0"
+    elif [[ $sdkname =~ "iPhoneOS" ]]; then
         minversion="-miphoneos-version-min=9.0"
     else # contains "Mac"
         minversion="-mmacosx-version-min=10.10"
     fi
+    echo "minversion $minversion"
+    # ./autogen.sh
     ./configure CC=clang --enable-float-approx --disable-shared --enable-static --with-pic \
         --disable-extra-programs --disable-doc --host=$host \
         CFLAGS=" -arch $arch -Ofast -flto -g -fPIE $minversion -isysroot $sdk" \
@@ -96,23 +101,39 @@ make distclean
 cd $here
 rm -rf $tmp
 mkdir -p $tmp
-
+rm -rf $opusHeadersDst
+mkdir -p $opusHeadersDst
+rm -rf $fatLibsDest
+mkdir -p $fatLibsDest
 
 fatProductIos="libopus_ios.a"
 echo "\n==========================="
 echo "generate $fatProductIos ..."
-generateLibopus "x86_64-apple-darwin" "x86_64" $sdkSimulator
-generateLibopus "x86_64-apple-darwin" "i386" $sdkSimulator
 generateLibopus "arm-apple-darwin" "armv7" $sdkPhone
 generateLibopus "arm-apple-darwin" "arm64" $sdkPhone
 cd $tmp
-products=`ls | grep libopus | grep iPhone`
-echo "generating $fatProductIos from ${products} ..." 
+products=`ls | grep libopus | grep iPhoneOS`
+echo "generating $fatProductIos from ${products} ..."
 lipo -create ${products} -output $fatProductIos
 cd $here
 cp -v $tmp/$fatProductIos $fatLibsDest
 lipo -info $fatLibsDest/$fatProductIos
 echo "$fatLibsDest/$fatProductIos generated."
+echo "\n==========================="
+
+fatProductIosSim="libopus_ios_sim.a"
+echo "\n==========================="
+echo "generate $fatProductIosSim ..."
+generateLibopus "x86_64-apple-darwin" "x86_64" $sdkSimulator
+generateLibopus "arm-apple-darwin" "arm64" $sdkSimulator
+cd $tmp
+products=`ls | grep libopus | grep iPhoneSimulator`
+echo "generating $fatProductIosSim from ${products} ..."
+lipo -create ${products} -output $fatProductIosSim
+cd $here
+cp -v $tmp/$fatProductIosSim $fatLibsDest
+lipo -info $fatLibsDest/$fatProductIosSim
+echo "$fatLibsDest/$fatProductIosSim generated."
 echo "\n==========================="
 
 
@@ -123,7 +144,7 @@ generateLibopus "x86_64-apple-darwin20.2.0" "x86_64" $sdkMac
 generateLibopus "aarch64-apple-darwin20.0.0" "arm64" $sdkMac
 cd $tmp
 products=`ls | grep libopus | grep Mac`
-echo "generating $fatProductMac from ${products} ..." 
+echo "generating $fatProductMac from ${products} ..."
 lipo -create ${products} -output $fatProductMac
 cd $here
 cp -v $tmp/$fatProductMac $fatLibsDest
@@ -138,7 +159,7 @@ echo "generate $fatProductCatalyst ..."
 generateLibopus "x86_64-apple-darwin20.2.0" "x86_64h" $sdkMac
 cd $tmp
 products=`ls | grep libopus | grep x86_64h`
-echo "generating $fatProductCatalyst from ${products} ..." 
+echo "generating $fatProductCatalyst from ${products} ..."
 lipo -create ${products} -output $fatProductCatalyst
 cd $here
 cp -v $tmp/$fatProductCatalyst $fatLibsDest
@@ -156,4 +177,3 @@ for f in $opusHeaders/*.h; do
 done
 echo "opus-swift.xcodeproj is ready"
 echo "done."
-

@@ -22,24 +22,24 @@
 # OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 # SOFTWARE.
 
-# 
+#
 # Generates opus_swift.xcframework from opus.xcodeproj.
 # Usage: no parameters, settings mostly defined in xcode project
-# 
+#
 
-opts="SKIP_INSTALL=NO BUILD_LIBRARIES_FOR_DISTRIBUTION=YES" 
+opts="SKIP_INSTALL=NO BUILD_LIBRARIES_FOR_DISTRIBUTION=YES"
 
 dd=./DerivedData
 archivesPath="$dd/Archives"
 generatedPath="Products/Library/Frameworks"
 
-# path and name of intermediatly built frameworks 
-builtPath="$dd/Build/Products" 
+# path and name of intermediatly built frameworks
+builtPath="$dd/Build/Products"
 framework=YbridOpus.framework
 
 rm -rfd $dd
 mkdir -p "$archivesPath"
-mkdir -p "$builtPath" 
+mkdir -p "$builtPath"
 
 pj="-project opus-swift.xcodeproj"
 
@@ -51,7 +51,7 @@ xcodebuild archive $pj -scheme $scheme -destination="iOS" -sdk $platform -derive
 cp -R "$archivesPath/$platform.xcarchive/$generatedPath" "$builtPath/Archive-$platform"
 
 platform=iphonesimulator
-scheme=opus_ios
+scheme=opus_ios_sim
 echo "building for $platform..."
 xcodebuild archive $pj -scheme $scheme -destination="iOS Simulator" -sdk $platform -derivedDataPath $dd \
     -archivePath "$archivesPath/$platform.xcarchive" $opts > "build-$platform.log"
@@ -85,7 +85,7 @@ for entry in $products; do
     cmd="$cmd -framework $builtPath/$entry/$framework "
 done
 cmd="$cmd -output $xcframework"
-#echo "$cmd"
+echo "$cmd"
 $cmd
 
 echo "zip $xcframework including LICENSE file..."
